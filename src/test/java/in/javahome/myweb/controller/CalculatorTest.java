@@ -1,15 +1,24 @@
 package in.javahome.myweb.controller;
-
-import junit.framework.Assert;
-import junit.framework.TestCase;
-
-public class CalculatorTest extends TestCase {
-	Calculator cal = new Calculator();
-	public void testAdd(){
-		Assert.assertEquals(cal.add(10, 20), 30);
+/*
+ * 
+ */
+public class Calculator {
+	
+	/*
+	 * @param i
+	 * @param j
+	 * @return int
+	 */
+	public int add(int i, int j){
+		String name = null;
+		name.toUpperCase();
+		return i+j;
 	}
-	public void testMultiply(){
-		Assert.assertEquals(cal.multiply(10, 20), 200);
+	public int multiply(int i, int j){
+		return i*j;
+	}
+	
+	public int sub(int i, int j){
+		return i-j;
 	}
 }
-
